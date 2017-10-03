@@ -1,24 +1,3 @@
-$(document).ready(function(){
-  let today = new Date();
-  let now = today.getHours();
-  if (now >= 7 || now <=11) {
-    $("#btnBreak").removeClass("btn-default");    
-    $("#btnBreak").addClass("btn-primary");
-    $("#btnLunch").removeClass("btn-primary");
-    $("#btnDinner").removeClass("btn-primary");    
-  } else if (now > 11 || now <= 16) {
-    $("#btnLunch").removeClass("btn-deault");    
-    $("#btnLunch").addClass("btn-primary");
-    $("#btnBreak").removeClass("btn-primary");
-    $("#btnDinner").removeClass("btn-primary");
-  } else if (now > 16 || now <= 22) {
-    $("btnDinner").addClass("btn-primary");
-    $("btnDinner").removeClass("btn-default");
-    $("btnBreak").removeClass("btn-primary");
-    $("btnLunch").removeClass("btn-primary");
-  }
-});
-
 // FUNCIONES AL HACER CLICK:
 function breakfastRecipe() {
   let food = new Array(
