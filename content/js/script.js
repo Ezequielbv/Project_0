@@ -8,7 +8,7 @@ function breakfastRecipe() {
     'Porridge with milk');
 
   let randomArray = Math.floor(Math.random() * food.length);
-  document.getElementById("breakfast").textContent = "Breakfast: " + food[randomArray];
+  document.getElementById("breakfast").innerHTML = "<em>Breakfast: </em><br>" + food[randomArray];
   $("#breakfast").removeClass("hidden");
   $("#lunch").addClass("hidden");
   $("#dinner").addClass("hidden");
@@ -23,7 +23,7 @@ function lunchRecipe() {
     'Chicken with broccoli');
 
   let randomArray = Math.floor(Math.random() * food.length);
-  document.getElementById("lunch").textContent = "Lunch: " + food[randomArray];
+  document.getElementById("lunch").innerHTML = "<em>Lunch: </em><br>" + food[randomArray];
   $("#lunch").removeClass("hidden");
   $("#breakfast").addClass("hidden");
   $("#dinner").addClass("hidden");
@@ -38,10 +38,8 @@ function dinnerRecipe() {
     'Pizza');
 
   let randomArray = Math.floor(Math.random() * food.length);
-  document.getElementById("dinner").textContent = "Dinner: " + food[randomArray];
+  document.getElementById("dinner").innerHTML = "<em>Dinner: </em><br>" + food[randomArray];
   $("#dinner").removeClass("hidden");
   $("#lunch").addClass("hidden");
   $("#breakfast").addClass("hidden");
 };
-
-
