@@ -3,23 +3,52 @@
 }
 
 body {
-	background-color: #9AF3D6;
+	background-color: #F5F7F7;
+	color: #555;
+	font-family: 'Dosis', sans-serif;
+
+}
+
+.container {
+
 }
 
 h1 {
-	font-family: 'Indie Flower', cursive;
+	margin-top: 20%;
+	margin-right: 10%;
+	text-align: right;
 }
 
-#botones {
-	text-align: center;
+h2 {
+	font-family: 'Dosis', sans-serif;
+	font-size: 3em;
+	margin-right: 10%;
+	text-align: right;	
+}
 
+a:link, a:visited {
+	color: #555;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #111;
+	text-decoration: none;
+}
+
+button {
+	text-align: center;
+	margin-top: 25px;
 }
 
 #btnBreak, #btnLunch, #btnDinner {
 	width: 30%;
-	margin: 0 5px 0 5px;
+	padding: 0 15px 0 15px;
+	border-radius: 0;
 }
 
+
+/* ////////  MEDIA QUERIES   ///////// */
 @media screen and (min-width: 767px) {
 
 }
@@ -30,7 +59,6 @@ h1 {
 	}
 #btnBreak, #btnLunch, #btnDinner {
 	width: 100%;
-	margin: 0;
 }
 	.btn {
 		font-size: 3em;
