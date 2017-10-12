@@ -34,18 +34,25 @@ a:hover {
 
 .botones {
 	float: left;
+	width: 20%;
 }
 
-.btn {
-	text-align: left;
+.btn:nth-child(n+2){
 	margin-top: 20px;
+
+}
+.btn {
+	text-align: center;
 	font-size: 2em;
+	color: #FFF;
+
+	width: 100%;
+	padding: 0 15px 0 15px;
+	/*background-color: #EFEFEF;*/
+	/*border-radius: 0;*/
 }
 
 #btnBreak, #btnLunch, #btnDinner {
-	width: 100%;
-	padding: 0 15px 0 15px;
-	border-radius: 0;
 }
 
 #breakfast, #lunch, #dinner {
@@ -55,28 +62,33 @@ a:hover {
 
 
 /* ////////  MEDIA QUERIES   ///////// */
-@media screen and (min-width: 767px) {
-
-}
-
+/* iPhones */
 @media screen and (max-width: 479px) {
-	h1, h2 {
-		font-size: 1.5em;
+	h1 {
+		font-size: 1.6em;
 		margin-top: 30%;
 		margin-right: 5%;
 	}
-
+	h2 {
+		font-size: 1.6em;
+	}
 
 	#btnBreak, #btnLunch, #btnDinner { 
-		width: 100%;
+		/*width: 100%;*/
+	}
+
+	.botones {
+		width: 30%;
 	}
 
 	.btn {
-		font-size: 3em;
+		font-size: 1.2em;
+		height: 2.5em;
+
 	}
 
 	#breakfast, #lunch, #dinner {
 		text-align: center;
-		font-size: 3em;
+		font-size: 2em;
 	}
 }
