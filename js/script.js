@@ -1,18 +1,21 @@
+// FUNCIONES AL HACER CLICK:
 function breakfastRecipe() {
-  
   let food = new Array(
-    'Sandwitch',
+    'Sandwitch', 
     'Scrambled eggs with tomatoes',
     'Yogurt with muesli',
     'Smoothie',
     'Porridge with milk');
 
-  let randomArray = Math.floor(Math.random() * food.length);
-  $("#breakfast").textContent = "Breakfast: " + food[randomArray];
+  let randomArray = Math.floor(Math.random() * food.length);  
+    //Código HTML a introducir
+    let htmlBreak = 
+      "<em>Breakfast: </em><br>" + food[randomArray];
+    // ** fin código HTML introducido **
+  document.getElementById("breakfast").innerHTML = htmlBreak;
   $("#breakfast").removeClass("hidden");
   $("#lunch").addClass("hidden");
   $("#dinner").addClass("hidden");
-
 };
 
 function lunchRecipe() {
@@ -24,7 +27,11 @@ function lunchRecipe() {
     'Chicken with broccoli');
 
   let randomArray = Math.floor(Math.random() * food.length);
-  document.getElementById("lunch").textContent = "Lunch: " + food[randomArray];
+    //Código HTML a introducir
+    let htmlLunch = 
+      "<em>Lunch: </em><br>" + food[randomArray];
+    // ** fin código HTML introducido **
+  document.getElementById("lunch").innerHTML = htmlLunch;
   $("#lunch").removeClass("hidden");
   $("#breakfast").addClass("hidden");
   $("#dinner").addClass("hidden");
@@ -39,10 +46,12 @@ function dinnerRecipe() {
     'Pizza');
 
   let randomArray = Math.floor(Math.random() * food.length);
-  document.getElementById("dinner").textContent = "Dinner: " + food[randomArray];
+    //Código HTML a introducir  
+    let htmlDinner = 
+      "<em>Dinner: </em><br>" + food[randomArray]
+    // ** fin código HTML introducido **
+  document.getElementById("dinner").innerHTML = htmlDinner;
   $("#dinner").removeClass("hidden");
   $("#lunch").addClass("hidden");
   $("#breakfast").addClass("hidden");
 };
-
-
