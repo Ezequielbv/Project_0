@@ -1,5 +1,11 @@
+
+document.addEventListener("DOMContentLoaded",
+  function (event) {
+
 // FUNCIONES AL HACER CLICK:
+// ** BREAKFAST **
 function breakfastRecipe() {
+  // this.textContent="Eat it!"; //Cambia el nombre del botón al pulsarlo
   let food = new Array(
     'Sandwitch', 
     'Scrambled eggs with tomatoes',
@@ -9,15 +15,18 @@ function breakfastRecipe() {
 
   let randomArray = Math.floor(Math.random() * food.length);  
     //Código HTML a introducir
-    let htmlBreak = 
-      "<em>Breakfast: </em><br>" + food[randomArray];
+    let addBreak = 
+      "<p>Breakfast:</p>" + food[randomArray];
     // ** fin código HTML introducido **
-  document.getElementById("breakfast").innerHTML = htmlBreak;
+  document.getElementById("breakfast").innerHTML = addBreak;
   $("#breakfast").removeClass("hidden");
   $("#lunch").addClass("hidden");
   $("#dinner").addClass("hidden");
 };
+//Unobstrusive event binding
+document.querySelector("#btnBreak").onclick = breakfastRecipe;
 
+// ** LUNCH **
 function lunchRecipe() {
   let food = new Array(
     'Rice with tunfish',
@@ -28,15 +37,18 @@ function lunchRecipe() {
 
   let randomArray = Math.floor(Math.random() * food.length);
     //Código HTML a introducir
-    let htmlLunch = 
-      "<em>Lunch: </em><br>" + food[randomArray];
+    let addLunch = 
+      "<p>Lunch:</p>" + food[randomArray];
     // ** fin código HTML introducido **
-  document.getElementById("lunch").innerHTML = htmlLunch;
+  document.getElementById("lunch").innerHTML = addLunch;
   $("#lunch").removeClass("hidden");
   $("#breakfast").addClass("hidden");
   $("#dinner").addClass("hidden");
 };
+//Unobstrusive event binding
+document.querySelector("#btnLunch").onclick = lunchRecipe;
 
+// ** DINNER **
 function dinnerRecipe() {
   let food = new Array(
     'Potatoes Puree',
@@ -47,11 +59,16 @@ function dinnerRecipe() {
 
   let randomArray = Math.floor(Math.random() * food.length);
     //Código HTML a introducir  
-    let htmlDinner = 
-      "<em>Dinner: </em><br>" + food[randomArray]
+    let addDinner = 
+      "<p>Dinner:</p>" + food[randomArray]
     // ** fin código HTML introducido **
-  document.getElementById("dinner").innerHTML = htmlDinner;
+  document.getElementById("dinner").innerHTML = addDinner;
   $("#dinner").removeClass("hidden");
   $("#lunch").addClass("hidden");
   $("#breakfast").addClass("hidden");
 };
+//Unobstrusive event binding
+document.querySelector("#btnDinner").onclick = dinnerRecipe;
+  
+}
+);
