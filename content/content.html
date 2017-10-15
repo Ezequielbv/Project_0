@@ -11,25 +11,35 @@
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 	<script src="../js/jquery-3.2.1.min.js"></script>
 	<script src="../js/bootstrap.min.js"> </script>
-	<script src="../js/script.js"> </script>
-
+  <script src="../js/script.js"> </script>
 
   </head>
 <body>
- <div class="container">
+ <div class='navbar navbar-default navbar-static-top'>
+  <div class='container'>
+    <a href="https://www.linkedin.com/in/ezequielbv/" target="_blanc" class='navbar-brand'>Contact</a>
+ </div>
+ </div>
+
+ <div class="">
   <h2><a href="../index.html">What would it be?</a></h2>
  </div>
 
   <div class="botones">
-    <button type="button" id="btnBreak" class="btn btn-primary" onclick="breakfastRecipe();">Breakfast</button>
-    <button type="button" id="btnLunch" class="btn btn-success" onclick="lunchRecipe();">Lunch</button>
-    <button type="button" id="btnDinner" class="btn btn-warning"  onclick="dinnerRecipe();">Dinner</button>
+    <button type="button" id="btnBreak" class="btn btn-primary">Breakfast</button>
+    <button type="button" id="btnLunch" class="btn btn-success">Lunch</button>
+    <button type="button" id="btnDinner" class="btn btn-warning">Dinner</button>
   </div>
 
-  <div id="breakfast" class="well hidden"></div>
-  <div id="lunch" class="well hidden"></div>
-  <div id="dinner" class="well hidden"></div>
+  <div id="breakfast" class="answer well hidden"></div>
+  <div id="lunch" class="answer well hidden"></div>
+  <div id="dinner" class="answer well hidden"></div>
 
+
+ <footer>
+ <div class="container">
+  <a href="https://www.linkedin.com/in/ezequielbv/" target="_blanc"><p> &copy; Coded by Ezequiel BV </p></a> </div>
+ </footer>
 
 </body>
 </html>
