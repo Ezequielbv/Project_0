@@ -3,10 +3,11 @@
 }
 
 body {
-	background-color: #F5F7F7;
 	color: #555;
 	font-family: 'Dosis', sans-serif;
-
+	background-image: url('../img/waffle-heart-2697904_1920.jpg') no-repeat;
+	background-size: 1500px;
+	background-/*color*/: #F5F7F7;
 }
 
 h1 {
@@ -14,6 +15,11 @@ h1 {
 	margin-right: 10%;
 	text-align: right;
 }
+ul li{
+	display: inline;
+	float: right;
+}
+
 
 h2 {
 	font-family: 'Dosis', sans-serif;
@@ -51,6 +57,15 @@ a:hover {
 	margin-top: 20px;
 }
 
+.answer{
+	height: 167.2px;
+}
+.answer p{
+	color: grey;
+	font-size: .7em;
+	font-style: italic;
+
+}
 
 #btnBreak, #btnLunch, #btnDinner {
 }
@@ -71,7 +86,9 @@ footer {
 	color: #fff;
 	font-size: 0.8em;
 	background-color: #111;
-
+}
+footer a:visited{
+	color: #fff;
 }
 
 /* ////////  MEDIA QUERIES   ///////// */
